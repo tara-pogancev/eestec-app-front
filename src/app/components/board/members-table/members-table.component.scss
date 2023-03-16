@@ -1,0 +1,61 @@
+.container-box {
+  //overflow-y: scroll;
+  max-height: calc(100vh - 102px - 60px);
+}
+
+table {
+  width: 100%;
+}
+
+.table-container {
+  width: 100%;
+  max-height: calc(100vh - 330px);
+  overflow-y: scroll;
+}
+
+tr:nth-child(even) {
+  background: #fdeeee57;
+}
+
+tr {
+  transition: all 0.2s;
+
+  &:hover {
+    background: rgb(231, 161, 161) !important;
+  }
+}
+
+td,
+th {
+  vertical-align: middle;
+}
+
+.img-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  margin: 10px 0;
+  overflow: hidden;
+  visibility: visible;
+}
+
+.checkbox-container {
+  margin-top: -55px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  visibility: hidden;
+}
+
+.first-column {
+  &:hover .checkbox-container {
+    visibility: visible;
+  }
+
+  &:hover .img-container {
+    visibility: hidden;
+  }
+}
+
+::ng-deep .mat-mdc-menu-content {
+  padding: 15px !important;
+}

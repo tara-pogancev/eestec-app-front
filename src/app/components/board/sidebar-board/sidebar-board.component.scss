@@ -1,5 +1,6 @@
 .navbar {
   width: 250px;
+  height: 100%;
 }
 
 .mat-mdc-list-item-icon {
@@ -15,13 +16,13 @@ mat-list-item {
   transition: all 0.3s;
 
   &:hover {
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: rgba(197, 197, 197, 0.623);
   }
 }
 
 .selected {
-  border-radius: 20px !important;
+  border-radius: 15px !important;
   background-color: rgba(250, 181, 181, 0.76);
 }
 
@@ -31,4 +32,8 @@ mat-list-item {
 
 .selected .mat-mdc-list-item-icon {
   color: #e6353a;
+}
+
+.logout-button {
+  margin-bottom: 20px;
 }

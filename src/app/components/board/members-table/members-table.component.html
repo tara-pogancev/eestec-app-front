@@ -1,1 +1,105 @@
-<p>members-table works!</p>
+<div class="container-box">
+  <div class="columns">
+    <div class="column">
+      <h1>Lista članova 💃</h1>
+    </div>
+    <div class="column is-flex is-flex-direction-row-reverse">
+      <mat-form-field appearance="fill">
+        <mat-label>Sortiraj</mat-label>
+        <mat-select>
+          <mat-option value="name">Ime</mat-option>
+          <mat-option value="course">Smer</mat-option>
+          <mat-option value="activity">Aktivnost</mat-option>
+          <mat-option value="team">Tim</mat-option>
+          <mat-option value="joinDate">Datum učlanjenja</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button
+        class="mt-2 mr-5"
+        mat-flat-button
+        color="primary"
+        [matMenuTriggerFor]="menuGroups"
+        aria-label="Example icon-button with a menu"
+      >
+        Prikaži grupe
+      </button>
+      <mat-menu #menuGroups="matMenu">
+        <ul>
+          <li>
+            <mat-checkbox>PR tim</mat-checkbox>
+          </li>
+          <li>
+            <mat-checkbox>IT tim</mat-checkbox>
+          </li>
+          <li>
+            <mat-checkbox>Dizajn tim</mat-checkbox>
+          </li>
+          <li>
+            <mat-checkbox>HR tim</mat-checkbox>
+          </li>
+          <li>
+            <mat-checkbox>Board</mat-checkbox>
+          </li>
+        </ul>
+      </mat-menu>
+
+      <button
+        class="mr-5"
+        mat-icon-button
+        color="primary"
+        [matMenuTriggerFor]="menuSelection"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #menuSelection="matMenu">
+        <button mat-menu-item>Dodaj u grupu</button>
+        <button mat-menu-item>Dodaj u događaj</button>
+        <button mat-menu-item>Kreiraj task</button>
+      </mat-menu>
+    </div>
+  </div>
+  <hr />
+
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource">
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef>No.</th>
+        <td mat-cell *matCellDef="let element" class="first-column">
+          <div class="img-container">
+            <img src="/assets/sephiroth.jpg" />
+          </div>
+          <div class="checkbox-container">
+            <mat-checkbox></mat-checkbox>
+          </div>
+        </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef>Name</th>
+        <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="weight">
+        <th mat-header-cell *matHeaderCellDef>Weight</th>
+        <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef>Symbol</th>
+        <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>
