@@ -1,0 +1,142 @@
+<div class="auth-bg is-flex is-flex-direction-column is-justify-content-center">
+  <div class="max-width-1200 auto-margin">
+    <div class="mb-5 img-container">
+      <img src="/assets/logowhite.png" />
+    </div>
+    <div class="auth-container is-flex is-flex-direction-column">
+      <h1>Postani naš član!</h1>
+      <p class="mb-5">
+        🔸Veliko nam je zadovoljstvo što ste zainteresovani da se pridružite
+        EESTEC-u, udruženju studenata elektrotehnike Evrope. Kao članovi
+        EESTEC-a, imaćete priliku da učestvujete u raznim aktivnostima
+        profesionalnog i ličnog razvoja, uključujući stručne radionice, posete
+        kompanijama i programe međunarodne studentske razmene. 💪
+      </p>
+      <div class="columns">
+        <div
+          class="column is-flex is-flex-direction-column is-justify-content-center"
+        >
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Mejl</mat-label>
+              <input matInput placeholder="email@example.com" type="email" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Ime</mat-label>
+              <input matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Prezime</mat-label>
+              <input matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Lozinka</mat-label>
+              <input matInput placeholder="Placeholder" type="password" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Ponoviti lozinku</mat-label>
+              <input matInput placeholder="Placeholder" type="password" />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="column">
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Broj telefona</mat-label>
+              <input matInput type="text" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Veličina majice</mat-label>
+              <mat-select>
+                <mat-option value="S">S</mat-option>
+                <mat-option value="M">M</mat-option>
+                <mat-option value="L">L</mat-option>
+                <mat-option value="XL">XL</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Godina upisa fakulteta</mat-label>
+              <input matInput type="number" />
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Naziv smera</mat-label>
+              <mat-select>
+                <mat-option value="EE"
+                  >EE - Energetika, elektronika i telekomunikacije</mat-option
+                >
+                <mat-option value="RA"
+                  >RA - Računarstvo i automatika</mat-option
+                >
+                <mat-option value="PR"
+                  >PR - Primenjeno softvefsko inženjerstvo</mat-option
+                >
+                <mat-option value="BI"
+                  >BI - Biomedicinsko inženjerstvo</mat-option
+                >
+                <mat-option value="GI"
+                  >GI - Grafičko inženjerstvo i dizajn</mat-option
+                >
+                <mat-option value="BI"
+                  >BI - Biomedicinsko inženjerstvo</mat-option
+                >
+                <mat-option value="IN"
+                  >IN - Informacioni Inzenjering</mat-option
+                >
+                <mat-option value="IT"
+                  >IT - Inženjerstvo informacionih sistema</mat-option
+                >
+                <mat-option value="IM">IM - Inženjerski menadžement</mat-option>
+                <mat-option value="MH">MH - Mehatronika</mat-option>
+                <mat-option value="SV"
+                  >SV - Softversko inzenjerstvo i informacione
+                  tehnologije</mat-option
+                >
+                <mat-option value="SL"
+                  >SL - Softverske i informacione tehnologije</mat-option
+                >
+                <mat-option value="AI"
+                  >AI - Animacija u inzinjetstvu</mat-option
+                >
+                <mat-option value="Other">Drugo</mat-option>
+              </mat-select>
+              <mat-hint align="end"
+                >Ukoliko je "drugo" molimo navedite</mat-hint
+              >
+            </mat-form-field>
+          </div>
+          <div class="form-container">
+            <mat-form-field appearance="outline">
+              <mat-label>Smer (specificirajte)</mat-label>
+              <input matInput type="text" />
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <div class="auto-margin">
+        <a [routerLink]="['/board']">
+          <button mat-flat-button color="primary">Registruj se</button>
+        </a>
+        <a [routerLink]="['/login']">
+          <button mat-stroked-button color="primary" class="ml-5">
+            Prijava
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

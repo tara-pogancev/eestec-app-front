@@ -1,0 +1,54 @@
+<div
+  class="navbar is-flex is-justify-content-center is-align-items-center is-flex-direction-column"
+>
+  <img src="/assets/logored.png" width="150px" class="p-5" />
+  <mat-list>
+    <div mat-subheader class="subheader">Članovi</div>
+    <a [routerLink]="['/board/members']">
+      <mat-list-item [ngClass]="{ selected: tab == 0 }">
+        <mat-icon matListItemIcon>people</mat-icon>
+        <div matListItemTitle>Lista članova</div>
+      </mat-list-item>
+    </a>
+    <a [routerLink]="['/board/groups']">
+      <mat-list-item [ngClass]="{ selected: tab == 1 }">
+        <mat-icon matListItemIcon>people_outline</mat-icon>
+        <div matListItemTitle>Grupe</div>
+      </mat-list-item>
+    </a>
+    <mat-divider></mat-divider>
+    <div mat-subheader class="subheader">Taskovi</div>
+    <a [routerLink]="['/board/tasks']">
+      <mat-list-item [ngClass]="{ selected: tab == 2 }">
+        <mat-icon matListItemIcon>collections_bookmark</mat-icon>
+        <div matListItemTitle>Delegirani zadaci</div>
+      </mat-list-item>
+    </a>
+    <a [routerLink]="['/board/my-tasks']">
+      <mat-list-item [ngClass]="{ selected: tab == 3 }">
+        <mat-icon matListItemIcon>person_pin</mat-icon>
+        <div matListItemTitle>Moji zadaci</div>
+      </mat-list-item>
+    </a>
+    <mat-divider></mat-divider>
+    <div mat-subheader class="subheader">Obaveštenja</div>
+    <a [routerLink]="['/board/calendar']">
+      <mat-list-item [ngClass]="{ selected: tab == 4 }">
+        <mat-icon matListItemIcon>calendar_today</mat-icon>
+        <div matListItemTitle>Kalendar</div>
+      </mat-list-item>
+    </a>
+    <a [routerLink]="['/board/local-notifications']">
+      <mat-list-item [ngClass]="{ selected: tab == 5 }">
+        <mat-icon matListItemIcon>location_on</mat-icon>
+        <div matListItemTitle>Lokalna obaveštenja</div>
+      </mat-list-item>
+    </a>
+    <a [routerLink]="['/board/int-notifications']">
+      <mat-list-item [ngClass]="{ selected: tab == 6 }">
+        <mat-icon matListItemIcon>airplanemode_active</mat-icon>
+        <div matListItemTitle>Int obaveštejna</div>
+      </mat-list-item>
+    </a>
+  </mat-list>
+</div>

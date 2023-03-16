@@ -1,0 +1,34 @@
+.navbar {
+  width: 250px;
+}
+
+.mat-mdc-list-item-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.subheader {
+  font-weight: 500 !important;
+}
+
+mat-list-item {
+  cursor: pointer !important;
+  transition: all 0.3s;
+
+  &:hover {
+    border-radius: 20px;
+    background-color: rgba(197, 197, 197, 0.623);
+  }
+}
+
+.selected {
+  border-radius: 20px !important;
+  background-color: rgba(250, 181, 181, 0.76);
+}
+
+.selected div {
+  color: #e6353a;
+}
+
+.selected .mat-mdc-list-item-icon {
+  color: #e6353a;
+}

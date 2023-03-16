@@ -1,0 +1,34 @@
+<div class="auth-bg is-flex is-flex-direction-column is-justify-content-center">
+  <div class="max-width-800 auto-margin">
+    <div class="mb-5 img-container">
+      <img src="/assets/logowhite.png" />
+    </div>
+    <div class="auth-container is-flex is-flex-direction-column">
+      <h1>Prijava</h1>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Mejl</mat-label>
+          <input matInput placeholder="email@example.com" type="email" />
+          <mat-icon matSuffix>alternate_email</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-label>Lozinka</mat-label>
+          <input matInput placeholder="Placeholder" type="password" />
+          <mat-icon matSuffix>remove_red_eye</mat-icon>
+        </mat-form-field>
+      </div>
+      <div>
+        <a [routerLink]="['/board']">
+          <button mat-flat-button color="primary">Prijava</button>
+        </a>
+        <a [routerLink]="['/register']">
+          <button mat-stroked-button color="primary" class="ml-5">
+            Postani član!
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

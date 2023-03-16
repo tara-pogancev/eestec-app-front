@@ -1,0 +1,31 @@
+.auth-bg {
+  background: url("/assets/novisadbg.jpg");
+  width: 100%;
+  height: 100vh;
+}
+
+.auth-container {
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
+.img-container {
+  width: fit-content;
+  margin: auto;
+}
+
+mat-form-field {
+  width: 400px;
+}
+
+.form-container {
+  width: fit-content;
+  margin: auto;
+}

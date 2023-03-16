@@ -1,0 +1,12 @@
+<div class="page-component">
+  <mat-drawer-container>
+    <mat-drawer opened mode="side">
+      <app-sidebar-board></app-sidebar-board>
+    </mat-drawer>
+
+    <mat-drawer-content>
+      <app-header-board></app-header-board>
+      <router-outlet></router-outlet>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>
