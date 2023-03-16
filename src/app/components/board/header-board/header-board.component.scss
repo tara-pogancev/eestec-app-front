@@ -1,0 +1,68 @@
+.header-container {
+  width: 100%;
+  height: 100px;
+}
+
+.search-form-div {
+  width: 60%;
+}
+
+.search-form-div mat-form-field {
+  width: 100% !important;
+}
+
+.icons-container {
+  width: 40%;
+  padding-right: 10px;
+}
+
+.icons-container button {
+  margin-right: 20px;
+}
+
+.profile-img {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.profile-img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100px;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+  border-radius: 15px !important;
+  background-color: white;
+}
+
+::ng-deep
+  .mdc-text-field--outlined
+  .mdc-notched-outline
+  .mdc-notched-outline__leading {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 15px !important;
+}
+
+::ng-deep
+  .mdc-text-field--outlined
+  .mdc-notched-outline
+  .mdc-notched-outline__trailing {
+  border-top-left-radius: 0;
+  border-top-right-radius: 15px !important;
+  border-bottom-right-radius: 15px !important;
+  border-bottom-left-radius: 0;
+}
+
+::ng-deep .mat-mdc-form-field-subscript-wrapper {
+  height: 0px !important;
+}
+
+hr {
+  border: #e52e34 solid 1px;
+  width: 98%;
+}

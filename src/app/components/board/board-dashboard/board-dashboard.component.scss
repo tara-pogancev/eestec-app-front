@@ -4,7 +4,7 @@
 }
 
 .mat-drawer-content {
-  width: 100%;
+  width: calc(100% - 250px);
   height: 100vh;
 }
 
@@ -14,4 +14,8 @@
 
 .mat-drawer-content {
   background-color: rgba(255, 228, 228, 0.562);
+}
+
+.dashboard-content {
+  padding: 30px;
 }

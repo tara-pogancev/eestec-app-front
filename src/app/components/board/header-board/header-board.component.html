@@ -1,1 +1,27 @@
-<p>header-board works!</p>
+<div
+  class="header-container is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center"
+>
+  <div class="search-form-div mx-5">
+    <mat-form-field appearance="outline">
+      <mat-label>Pretraga...</mat-label>
+      <input matInput placeholder="Placeholder" />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+
+  <div
+    class="is-flex is-flex-direction-row-reverse icons-container is-align-items-center"
+  >
+    <div class="profile-img">
+      <img src="/assets/sephiroth.jpg" />
+    </div>
+
+    <button mat-icon-button>
+      <mat-icon matBadge="10" matBadgeColor="warn">notifications</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon matBadgeColor="warn">settings</mat-icon>
+    </button>
+  </div>
+</div>
+<hr class="auto-margin" />
